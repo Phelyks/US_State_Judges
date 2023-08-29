@@ -1,0 +1,592 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: url(./Images/usa\ flag.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 85%;
+    height: 95%;
+    background: rgba(235, 214, 214, 0.753);
+    border-radius: 15px;
+    position: relative;
+    
+}
+
+.gavel {
+    width: 100%;
+    height: 15%;
+    background: url(./Images/gavel.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-color: black;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(231, 208, 208);
+    text-shadow: 4px 1px 3px rgba(0, 0, 255, 0.514);
+    font-size: 2.5vw;
+}
+
+.gavel h1 {
+    font-family: Times New Roman;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nav {
+    width: 20%;
+    height: 100%;
+    border-radius: 0px 0px 0px 15px;
+    border-right: 10px solid rgba(73, 63, 63, 0.479);
+}
+
+.navList {
+    overflow-y: scroll;
+    height: 100%;
+    border-top: 6px solid rgba(0, 0, 0, 0.329);
+    border-radius: 15px 15px 0px 0px;
+}
+
+/* *** Customize scroll bar styles *** */
+
+.navList::-webkit-scrollbar {
+    width: 10px;/* Set the width of the scrollbar */
+}
+
+.navList::-webkit-scrollbar-track {
+    background: #f1f1f117; /* Color of the track */
+}
+
+.navList::-webkit-scrollbar-thumb {
+    background: #8a8181; /* Color of the scrollbar thub */
+    border-radius: 10px;/* Round the corners of the thumb */
+}
+/* ****End of Scroll Bar Customization */
+
+.list-items {
+    padding: 15px 28px;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(219, 202, 202);
+}
+
+.list-items:hover:not(.active){
+    display: block;
+    background-color: rgba(73, 63, 63, 0.479);
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+.list-items:last-child{
+    padding-bottom: 25px;
+    border-bottom: none;
+}
+
+.content {
+    width: 80%;
+    height: 100%;
+    border-radius: 0px 0px 15px 0px;
+    justify-content: center;
+    justify-items: center;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;    
+ }
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+ }
+
+.active{
+    background-color: #0bda8ea6;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+    display: block;
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgba(26, 3, 3, 0.466);
+    width: 100%;
+    height: 5%;
+    z-index: 2;
+    color: rgb(216, 206, 206);
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px; /* Play with this */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    border-radius: 0px 0px 15px 15px;
+}
+
+footer i {
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 4px blue;
+}
+
+footer i:hover {
+    color: black;
+    transition: 0.3s;
+    font-size: 32px;
+}
+
+ /* **** TABLET RESPONSIVE  max-width: 768px ***** */
+
+@media only screen and (max-width:769px){
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        background: url(./Images/usa\ flag\ tablet\ background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main {
+        width: 95%;
+        height: 95%;
+        background: rgba(235, 214, 214, 0.753);
+        border-radius: 15px;
+        position: relative;
+        
+    }
+    
+    .gavel {
+        width: 100%;
+        height: 15%;
+        background: url(./Images/gavel.jpg);
+        background-size: cover;
+        background-color: black;
+        border-radius: 15px 15px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: rgb(231, 208, 208);
+        text-shadow: 4px 1px 3px rgba(0, 0, 255, 0.514);
+        font-size: 2.5vw;
+    }
+    
+    .gavel h1 {
+        font-family: Times New Roman;
+        
+    }
+    
+    .section {
+        position: relative;
+        width: 100%;
+        height: 80%;
+        border-radius: 0px 0px 15px 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .nav {
+        width: 30%;
+        height: 100%;
+        border-radius: 0px 0px 0px 15px;
+        border-right: 10px solid rgba(73, 63, 63, 0.479);
+    }
+
+    .nav h1 {
+        font-size: 28px;
+    }
+    
+    .navList {
+        overflow-y: scroll;
+        height: 100%;
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    
+    .list-items {
+        padding: 15px 15px;
+        font-size: 19px;
+        border-bottom: 2px solid rgb(219, 202, 202);
+        white-space: nowrap;
+    }
+    
+    .list-items:hover:not(.active){
+        display: block;
+        background-color: rgba(73, 63, 63, 0.479);
+        cursor: pointer;       
+    }
+    .list-items:last-child{
+        padding-bottom: 20px;
+        border-bottom: none;
+    }
+
+    /* *** Customize scroll bar styles *** */
+
+.navList::-webkit-scrollbar {
+    width: 5px;/* Set the width of the scrollbar */
+}
+
+.navList::-webkit-scrollbar-track {
+    background: #f1f1f117; /* Color of the track */
+}
+
+.navList::-webkit-scrollbar-thumb {
+    background: #8a8181; /* Color of the scrollbar thub */
+    border-radius: 10px;/* Round the corners of the thumb */
+}
+/* ****End of Scroll Bar Customization */
+    
+    .content {
+        width: 70%;
+        height: 100%;
+        border-radius: 0px 0px 15px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .section .nav ul li{
+        list-style: none;
+        margin-left: 0px;
+        padding: 15px 0px 16px 65px;
+        /* position: absolute; */
+        font-size: 20px;
+        font-weight: 549;
+    }
+    
+    .section .nav ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    li:hover:not(active) {
+        display: block;
+        background-color: rgba(73, 63, 63, 0.479);
+        cursor: pointer;
+        border-radius: 55px;
+        border: none;
+        color: whitesmoke;
+    }
+    
+    
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .avatar {
+        width: 60px;
+        height: 60px;
+        background-color: black;
+    }
+    
+    .active{
+        background-color: #0bda8ea6;
+        color: whitesmoke;
+        border-radius: 5px;
+        border: none;
+        font-weight: bolder;
+        display: block;
+        cursor: pointer;
+    }
+     
+    footer{
+        background-color: rgba(26, 3, 3, 0.466);
+        width: 100%;
+        height: 5%;
+        z-index: 2;
+        color: rgb(216, 206, 206);
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 5px; /* Play with this */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+        border-radius: 0px 0px 15px 15px;
+    }
+    
+    footer i {
+        font-size: 23px;
+        color: white;
+        text-shadow: 2px 2px 4px blue;
+    }
+    footer i:hover {
+        color: black;
+        transition: 0.9s;
+        font-size: 28px;
+    }
+}
+
+
+ /* **** Mobile RESPONSIVE  max-width: 500px ***** */
+
+@media only screen and (max-width:500px){
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        background: url(./Images/usa\ flag\ mobile\ background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .main {
+        margin-top: 5%;
+        width: 95%;
+        height: 95%;
+        background: rgba(235, 214, 214, 0.753);
+        border-radius: 15px;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        /* gap: 0%; */
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .gavel {
+        width: 100%;
+        height: 10%;
+        background: url(./Images/gavel.jpg);
+        background-size: cover;
+        /* background-attachment: fixed; */
+        /* background-color: black; */
+        border-radius: 15px 15px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: rgb(231, 208, 208);
+        text-shadow: 4px 1px 3px rgba(0, 0, 255, 0.514);
+        font-size: 2.5vw;
+    }
+    
+    .gavel h1 {
+        font-family: Times New Roman;
+        font-size: 35px;
+    }
+    
+    .section {
+        position: relative;
+        width: 100%;
+        height: 90%;
+        border-radius: 0px 0px 15px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* overflow: hidden; */
+    }
+    
+    .nav {
+        width: 100%;
+        height: 10%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.329);
+        border-right: 0px;
+    }
+    
+
+    .content {
+        width: 100%;
+        height: 90%;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .stateDiv {
+        width: 20%;
+        overflow: hidden;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        /* background-color: rgba(73, 63, 63, 0.479); */
+    }
+    .stateDiv h1 {
+        font-size: 18px;
+        /* display: block; */
+    }
+    .navList {
+        width: 80%;
+        overflow-x: scroll;
+        height: 100%;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: row;
+        border-top: 0px solid rgba(0, 0, 0, 0.329);
+        border-radius: 10px 0px 0px 10px;
+        border-left: 4px solid rgba(0, 0, 0, 0.329);
+        border-right: 0px solid rgba(0, 0, 0, 0.329);
+
+    }
+
+    .list-items {
+        padding: 5px 15px;
+        font-size: 18px;
+        border-right: 1px solid rgb(219, 202, 202);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* *** Customize scroll bar styles *** */
+    
+    .navList::-webkit-scrollbar {
+        height: 4px;
+        width: 0px;/* Set the width of the scrollbar
+    }
+    
+    /* .navList::-webkit-scrollbar-track { */
+        background: transparent;/* Color of the track */
+    }
+    
+    .navList::-webkit-scrollbar-thumb {
+        background: #8a1717; /* Color of the scrollbar thub */
+        border-radius: 100px;/* Round the corners of the thumb */
+    } */
+    /* ****End of Scroll Bar Customization */
+    .list-items:hover:not(.active){
+        display: inline-block;
+        background-color: rgba(73, 63, 63, 0.479);
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        color: whitesmoke;
+        font-weight: bolder;
+        padding: 5px 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .list-items:last-child{
+        border-bottom: none;
+    }
+    
+    iframe {
+        height: 100%;
+        width: 100%;
+        
+    }
+    
+    .avatar {
+        width: 60px;
+        height: 60px;
+        background-color: black;
+    }
+    
+    .active{
+        transition: 0.9ms;
+        background-color: #0bda8ed0;
+        color: whitesmoke;
+        border-radius: 5px;
+        border: none;
+        font-weight: bolder;
+        display: block;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+     
+    footer {
+        background-color: rgba(26, 3, 3, 0.466);
+        width: 100%;
+        height: 5%;
+        z-index: 2;
+        color: rgb(216, 206, 206);
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 5px; /* Play with this */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        border-radius: 0px 0px 15px 15px;
+    }
+    
+    footer i {
+        font-size: 20px;
+        color: white;
+        text-shadow: 2px 2px 4px blue;
+    }
+    footer i:hover {
+        color: black;
+        transition: 0.9s;
+        font-size: 25px;
+    }
+}

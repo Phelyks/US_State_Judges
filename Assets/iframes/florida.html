@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloFrame</title>
+    <style>
+    /* **** Desktop **** */
+    * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            text-align: center;
+            font-family: Cambria;
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        .content {
+            font-family: Cambria;
+            margin-right: 15px;
+            padding-right: 15px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .content p {
+            margin: 40px;
+        }
+        .dropdown {
+            position: relative;
+            cursor: pointer;
+        }
+        select {
+            width: 200px;
+        }
+        button {
+            background: linear-gradient(0deg, rgba(22,9,240,1) 20%, rgba(49,110,244,1) 40%);
+            width: 95px;
+            height: 30px;
+            border: none;
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: 700;
+            color: whitesmoke;
+            margin-left: 15px;
+            box-shadow: 0px 0px 0px 0px rgb(219, 213, 213),
+                4px 4px 5px 0px rgb(39, 27, 27),
+                7px 7px 20px 0px rgba(0,0,0,.4),
+                4px 4px 5px 0px rgba(0,0,0,.3);
+    }
+    button:hover{
+        transition: all cubic-bezier(0.39, 0.575, 0.565, 1);
+        background: green;
+        box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+        -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+        inset -4px -4px 6px 0 rgba(255,255,255,.2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+        color: rgb(94, 236, 229);
+    }
+    select{
+        border-radius: 15px;
+        border: none;
+        height: 30px;
+        padding: 0px 0px 0px 20px;
+        box-shadow: 1px 1px 0px 0px rgb(219, 213, 213),
+        4px 4px 5px 0px rgb(39, 27, 27),
+        7px 7px 20px 0px rgba(0,0,0,.4),
+        4px 4px 5px 0px rgba(0,0,0,.3);
+    }
+
+    /* End of Desktop CSS */
+
+    /* Start of Tablet CSS */
+
+    @media only screen and (max-width:768px){
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            text-align: center;
+            font-family: Cambria;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+        .content {
+            font-family: Cambria;
+            margin-right: 15px;
+            padding-right: 15px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .content p {
+            margin: 40px;
+        }
+        .dropdown {
+            position: relative;
+            cursor: pointer;
+        }
+        select {
+            width: 200px;
+            font-size: 15px;
+        }
+        button {
+            background: linear-gradient(0deg, rgba(22,9,240,1) 20%, rgba(49,110,244,1) 40%);
+            width: 95px;
+            height: 30px;
+            border: none;
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: 700;
+            color: whitesmoke;
+            margin-left: 15px;
+            box-shadow: 0px 0px 0px 0px rgb(219, 213, 213),
+                4px 4px 5px 0px rgb(39, 27, 27),
+                7px 7px 20px 0px rgba(0,0,0,.4),
+                4px 4px 5px 0px rgba(0,0,0,.3);
+    }
+    button:hover{
+        transition: all cubic-bezier(0.39, 0.575, 0.565, 1);
+        background: green;
+        box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+        -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+        inset -4px -4px 6px 0 rgba(255,255,255,.2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+        color: rgb(94, 236, 229);
+    }
+    select{
+        border-radius: 15px;
+        border: none;
+        height: 30px;
+        padding: 0px 0px 0px 20px;
+        box-shadow: 1px 1px 0px 0px rgb(219, 213, 213),
+        4px 4px 5px 0px rgb(39, 27, 27),
+        7px 7px 20px 0px rgba(0,0,0,.4),
+        4px 4px 5px 0px rgba(0,0,0,.3);
+    }
+    }
+
+    /* End of Tablet CSS */
+
+    /* Start of Mobile CSS */
+
+    @media only screen and (max-width:768px){
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            text-align: center;
+            font-family: Cambria;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .content {
+            font-family: Cambria;
+            /* margin-right: 15px; */
+            /* padding-right: 15px; */
+            font-size: 18px;
+            text-align: center;
+        }
+        .content p {
+            margin: 20px;
+            font-size: 18px;
+        }
+        .dropdown {
+            position: relative;
+            cursor: pointer;
+            margin-bottom: 25px;
+        }
+        select {
+            width: 200px;
+            font-size: 15px;
+        }
+        button {
+            background: linear-gradient(0deg, rgba(22,9,240,1) 20%, rgba(49,110,244,1) 40%);
+            width: 95px;
+            height: 30px;
+            border: none;
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: 700;
+            color: whitesmoke;
+            margin-left: 15px;
+            box-shadow: 0px 0px 0px 0px rgb(219, 213, 213),
+                4px 4px 5px 0px rgb(39, 27, 27),
+                7px 7px 20px 0px rgba(0,0,0,.4),
+                4px 4px 5px 0px rgba(0,0,0,.3);
+    }
+    button:hover{
+        transition: all cubic-bezier(0.39, 0.575, 0.565, 1);
+        background: green;
+        box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+        -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+        inset -4px -4px 6px 0 rgba(255,255,255,.2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+        color: rgb(94, 236, 229);
+    }
+    select{
+        border-radius: 15px;
+        border: none;
+        height: 30px;
+        padding: 0px 0px 0px 20px;
+        box-shadow: 1px 1px 0px 0px rgb(219, 213, 213),
+        4px 4px 5px 0px rgb(39, 27, 27),
+        7px 7px 20px 0px rgba(0,0,0,.4),
+        4px 4px 5px 0px rgba(0,0,0,.3);
+    }
+    }
+    /* End of Mobile CSS */ 
+    </style>
+</head>
+<body>
+    <h1>Florida Counties</h1>
+    <div class="content">
+        <p>Select your county from drop down menu below and click the '<strong>Fetch</strong>' button:</p>
+    <select id="countyLink" class="dropdown" name="calicounties">
+        <option value="" selected>Florida Counties:</option>
+        <option value="./../pages/florida/alameda.html">Alameda</option>
+        <option value="./../pages/florida/brevard.html">Brevard</option>
+        <option value="./../pages/florida/broward.html">Broward</option>
+        <option value="./../pages/florida/collier.html">Collier</option>
+        <option value="./../pages/florida/columbia.html">Columbia</option>
+        <option value="./../pages/florida/dixie.html">Dixie</option>
+        <option value="./../pages/florida/duvals.html">Duvals</option>
+    </select>
+    <a id="changeLink" href="http://" target="_parent">
+        <button>Fetch</button>
+    </a>
+    <script>
+        // Reference Inputfield and link
+        const countyLink = document.getElementById('countyLink');
+        const changeLink = document.getElementById('changeLink');
+
+        // Listen for Output changes
+        countyLink.addEventListener('input', function(){
+            // Get the value of the Inputfield
+            const newUrl = countyLink.value;
+
+            // Update the href attribute of the link
+            changeLink.href = newUrl
+        });
+    </script>
+    <!-- <a href="./../pages/florida/alameda.html">Control Link</a> -->
+    </div>
+</body>
+</html>

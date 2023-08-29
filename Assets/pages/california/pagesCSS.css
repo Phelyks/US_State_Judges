@@ -1,0 +1,561 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: url(./../../Images/usa\ flag.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    width: 85%;
+    height: 95%;
+    background: rgba(235, 214, 214, 0.753);
+    border-radius: 15px;
+    position: relative;
+    
+}
+
+.gavel {
+    width: 100%;
+    height: 15%;
+    background: url(./../../Images/gavel.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    /* background-color: black; */
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(231, 208, 208);
+    text-shadow: 4px 1px 3px rgba(0, 0, 255, 0.514);
+    font-size: 2.5vw;
+}
+
+.gavel .homeicon {
+    /* background-color: red; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0px 0px 0px;
+}
+
+.gavel .countyName{
+    /* background-color: blue; */
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 15px 0px 0px;
+    color: rgb(231, 208, 208);
+    text-shadow: 4px 1px 3px rgba(0, 0, 255, 0.514);
+    font-size: 3vw;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* background-color: black; */
+}
+.section .nav {
+    /* background-color: red; */
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.section .nav .judges{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 4px solid rgba(26, 3, 3, 0.466); */
+}
+
+.section .nav .navList{
+    /* background-color: purple; */
+    height: 85%;
+    width: 100%;
+    overflow-y: scroll;
+    white-space: nowrap;
+    border-top: 4px solid rgba(26, 3, 3, 0.466);
+    border-bottom: 4px solid rgba(26, 3, 3, 0.466);
+    border-radius: 15px 8px 8px 15px;
+}
+.section .nav .navList .list-items{
+    padding: 15px 30px;
+    font-size: 23px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/* *** Customize scroll bar styles *** */
+
+.navList::-webkit-scrollbar {
+    width: 5px;/* Set the width of the scrollbar */
+    height: 0px;
+}
+
+.navList::-webkit-scrollbar-track {
+    background: rgba(26, 3, 3, 0.007); /* Color of the track */
+}
+
+.navList::-webkit-scrollbar-thumb {
+    background: #8a8181; /* Color of the scrollbar thub */
+    border-radius: 10px;/* Round the corners of the thumb */
+}
+/* ****End of Scroll Bar Customization */
+
+.list-items:hover:not(.active){
+    display: block;
+    background-color: rgba(73, 63, 63, 0.479);
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+.active{
+    background-color: #0bda8ea6;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+    display: block;
+    cursor: pointer;
+}
+
+.section .content{
+    width: 75%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section .content iframe {
+    width: 100%;
+    height: 100%;
+}
+footer{
+    background-color: rgba(26, 3, 3, 0.466);
+    width: 100%;
+    height: 5%;
+    z-index: 2;
+    color: rgb(216, 206, 206);
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px; /* Play with this */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    border-radius: 0px 0px 15px 15px;
+}
+footer i {
+    font-size: 23px;
+    color: white;
+    text-shadow: 2px 2px 4px blue;
+}
+footer i:hover {
+    color: black;
+    transition: 0.9s;
+    font-size: 28px;
+}
+
+/* Tablet max-width 768px */
+@media only screen and (max-width:768px){
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        background: url(./../../Images/usa\ flag.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main {
+        width: 95%;
+        height: 95%;
+        background: rgba(235, 214, 214, 0.753);
+        border-radius: 15px;
+        position: relative;
+        
+    }
+    
+    .gavel {
+        width: 100%;
+        height: 15%;
+        background: url(./../../Images/gavel.jpg);
+        background-size: cover;
+        /* background-attachment: fixed; */
+        /* background-color: black; */
+        border-radius: 15px 15px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: rgb(231, 208, 208);
+        text-shadow: 4px 1px 3px rgba(0, 0, 255, 0.514);
+        font-size: 2.5vw;
+    }
+    
+    .gavel .homeicon {
+        height: 100%;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px 0px 0px 0px;
+    }
+    
+    .gavel .countyName{
+        height: 100%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 15px 0px 0px;
+        color: rgb(231, 208, 208);
+        text-shadow: 4px 1px 3px rgba(0, 0, 255, 0.514);
+        font-size: 3vw;
+    }
+    
+    .section {
+        position: relative;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .section .nav {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .section .nav .judges{
+        height: 15%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* border-bottom: 4px solid rgba(26, 3, 3, 0.466); */
+    }
+    
+    .section .nav .navList{
+        /* background-color: purple; */
+        height: 85%;
+        width: 100%;
+        overflow-y: scroll;
+        white-space: nowrap;
+        border-top: 4px solid rgba(26, 3, 3, 0.466);
+        border-bottom: 4px solid rgba(26, 3, 3, 0.466);
+        border-radius: 15px 15px 15px 15px;
+        font-size: 13px;
+    }
+    .section .nav .navList .list-items{
+        padding: 15px 5px;
+        font-size: 18px;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    
+    /* *** Customize scroll bar styles *** */
+    
+    .navList::-webkit-scrollbar {
+        width: 5px;/* Set the width of the scrollbar */
+        height: 0px;
+    }
+    
+    .navList::-webkit-scrollbar-track {
+        background: rgba(26, 3, 3, 0.007); /* Color of the track */
+    }
+    
+    .navList::-webkit-scrollbar-thumb {
+        background: #8a8181; /* Color of the scrollbar thub */
+        border-radius: 10px;/* Round the corners of the thumb */
+    }
+    /* ****End of Scroll Bar Customization */
+    
+    .section .content{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .section .content .iframe {
+        width: 100%;
+        height: 100%;
+    }
+    footer{
+        background-color: rgba(26, 3, 3, 0.466);
+        width: 100%;
+        height: 5%;
+        z-index: 2;
+        color: rgb(216, 206, 206);
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 5px; /* Play with this */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        border-radius: 0px 0px 15px 15px;
+    }
+    footer i {
+        font-size: 23px;
+        color: white;
+        text-shadow: 2px 2px 4px blue;
+    }
+    footer i:hover {
+        color: black;
+        transition: 0.9s;
+        font-size: 28px;
+    }
+}
+
+
+/* Mobile max-width 500px */
+
+@media only screen and (max-width:500px){
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        background: url(./../../Images/usa\ flag.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main {
+        width: 95%;
+        height: 95%;
+        background: rgba(235, 214, 214, 0.753);
+        border-radius: 15px;
+        position: relative;
+        
+    }
+    
+    .gavel {
+        width: 100%;
+        height: 15%;
+        background: url(./../../Images/gavel.jpg);
+        background-size: cover;
+        /* background-attachment: fixed; */
+        /* background-color: black; */
+        border-radius: 15px 15px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: rgb(231, 208, 208);
+        text-shadow: 4px 1px 3px rgba(0, 0, 255, 0.514);
+        font-size: 2.5vw;
+    }
+    
+    .gavel .homeicon {
+        height: 100%;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px 0px 0px 0px;
+    }
+
+    .gavel .homeicon img {
+        width: 60px;
+    }
+    
+    .gavel .countyName{
+        height: 100%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 15px 0px 0px;
+        color: rgb(231, 208, 208);
+        text-shadow: 4px 1px 3px rgba(0, 0, 255, 0.514);
+        font-size: 5vw;
+    }
+    
+    .section {
+        position: relative;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .section .nav {
+        width: 100%;
+        height: 12%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        overflow-x: scroll;
+        /* background: rgba(26, 3, 3, 0.466); */
+    }
+    .section .nav .judges{
+        height: 100%;
+        width: 15%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+    
+    .section .nav .navList{
+        height: 100%;
+        width: 85%;
+        overflow-x: scroll;
+        white-space: nowrap;
+        border-left: 4px solid rgba(26, 3, 3, 0.466);
+        border-right: 4px solid rgba(26, 3, 3, 0.466);
+        border-top: 0px solid rgba(26, 3, 3, 0.466);
+        border-bottom: 0px solid rgba(26, 3, 3, 0.466);
+        /* border-right: 4px solid white; */
+        /* border-radius: 15px 15px 15px 15px; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: rgba(26, 3, 3, 0.171);
+    }
+    .section .nav .navList .list-items{
+        padding: 15px 5px;
+        font-size: 20px;
+        border-right: 1px solid white;
+        /* border: none; */
+        display: inline-block;
+    }
+    
+    /* *** Customize scroll bar styles *** */
+    
+    .navList::-webkit-scrollbar {
+        height: 5px;/* Set the width of the scrollbar */
+    }
+    
+    .navList::-webkit-scrollbar-track {
+        background: rgba(26, 3, 3, 0.007); /* Color of the track */
+    }
+    
+    .navList::-webkit-scrollbar-thumb {
+        background: #8a8181; /* Color of the scrollbar thub */
+        border-radius: 10px;/* Round the corners of the thumb */
+    }
+    /* ****End of Scroll Bar Customization */
+    
+    .section .content{
+        width: 100%;
+        height: 88%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    .content::-webkit-scrollbar-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+    .content::-webkit-scrollbar-thumb{
+        border-radius: 0px;
+        background-color: transparent;
+    }
+    .section .content .iframe {
+        width: 100%;
+        height: 100%;
+    }
+    footer{
+        background-color: rgba(26, 3, 3, 0.466);
+        width: 100%;
+        height: 5%;
+        z-index: 2;
+        color: rgb(216, 206, 206);
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 5px; /* Play with this */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        border-radius: 0px 0px 15px 15px;
+    }
+    footer i {
+        font-size: 23px;
+        color: white;
+        text-shadow: 2px 2px 4px blue;
+    }
+    footer i:hover {
+        color: black;
+        transition: 0.9s;
+        font-size: 28px;
+    }
+}
